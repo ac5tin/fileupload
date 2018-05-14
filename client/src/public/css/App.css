@@ -1,0 +1,160 @@
+@font-face{
+    font-family: 'mononoki';
+    src: url('../webfonts/mononoki/mononoki-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../webfonts/mononoki/mononoki-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../webfonts/mononoki/mononoki-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../webfonts/mononoki/mononoki-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #f6f8f8;
+}
+
+
+#mainNavTitle{
+    color: white;
+}
+
+section#fileDropZone > div.dropzone > div{
+    height: auto !important;
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 4rem 1rem 2rem 1rem;
+}
+
+section#fileDropZone > div.dropzone > div > div > *{
+    text-align: center;
+}
+
+
+/* reduce padding size of sections */
+body section.section:nth-of-type(1) {
+    padding: 1rem 1.5rem 0rem 1.5rem;
+}
+
+body section.section:nth-of-type(n+2) {
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+}
+
+
+
+
+/* sweet alert box*/
+.sweet-alert .sa-icon.sa-info{display:none!important}
+.sweet-alert p b{font-weight:700;}
+
+
+
+.sweet-alert fieldset{
+    display:none;
+}
+
+
+/* override sweet alert confirm button styles with bulma styles */
+.sweet-alert .sa-confirm-button-container button.confirm{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: calc(0.625em - 1px);
+    padding-right: calc(0.625em - 1px);
+    padding-top: calc(0.375em - 1px);
+    position: relative;
+    vertical-align: top;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #363636 !important;
+    border-color: transparent;
+    color: whitesmoke;
+}
+
+
+.sweet-alert .sa-confirm-button-container button.confirm:focus,.sweet-alert .sa-confirm-button-container button.confirm:active{outline:none}
+
+.sweet-alert .sa-confirm-button-container button.confirm:hover{
+    background-color: #2f2f2f !important;
+    border-color: transparent;
+    color: whitesmoke;
+}
+.sweet-alert .sa-confirm-button-container button.confirm:focus{
+    border-color: transparent;
+    color: whitesmoke;
+}
+
+.sweet-alert .sa-confirm-button-container button.confirm:focus:not(:active){
+    -webkit-box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+        box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.sweet-alert .sa-confirm-button-container button:active{
+    background-color: #292929 !important;
+    border-color: transparent;
+    color: whitesmoke;
+}
+
+
+.center, section.secton#fileDropZone > div.dropzone > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* terminal */
+div.terminal{
+    background-color: #282a36;
+    color: #eff0eb;
+    border-radius: 10px;
+    box-shadow: 8px 7px 16px grey;
+    margin: 2rem 0;
+}
+
+div.terminal > div.terminal-bar{
+    background-color: #57c7ff;
+    color: #282a36;
+    text-align: center;
+    padding: 0.2rem 0;
+    border-radius: 10px 10px 0 0;
+}
+
+div.terminal > p.terminal-text{
+    font-family: mononoki, monospace;
+    padding: 1rem;
+}
+
+
+div.terminal > div.terminal-bar.green{
+    background-color: #5af78e;
+}
